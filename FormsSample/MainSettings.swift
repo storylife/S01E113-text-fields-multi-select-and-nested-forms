@@ -17,7 +17,7 @@ struct MainSettings {
 }
 
 extension MainSettings: TitleProvider {
-    func title() -> String {
+    var title: String {
         return "Settings"
     }
 }
