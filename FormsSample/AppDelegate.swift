@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let navigationController = UINavigationController()
-    let driver = FormDriver(initial: MainSettings(), element: settingsForm)
+    let driver = FormDriver(initial: MainSettings(), element: mainSettingsForm)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()

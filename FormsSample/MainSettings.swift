@@ -22,7 +22,7 @@ extension MainSettings: TitleProvider {
     }
 }
 
-let settingsForm: Form<MainSettings> =
+let mainSettingsForm: Form<MainSettings> =
     sections([
         section([
             detailTextCell(title: "Personal Hotspot", keyPath: \MainSettings.hotspotEnabled, form: bind(form: hotspotForm, to: \.hotspot))
