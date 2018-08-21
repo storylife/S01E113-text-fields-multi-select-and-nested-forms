@@ -22,7 +22,7 @@ class FormDriver<State> {
         }
     }
     
-    init(initial state: State, build: (RenderingContext<State>) -> RenderedElement<[Section], State>) {
+    init(initial state: State, element: (RenderingContext<State>) -> RenderedElement<[Section], State>) {
         self.state = state
         let context = RenderingContext(state: state, change: { [unowned self] f in
             f(&self.state)
@@ -31,7 +31,7 @@ class FormDriver<State> {
         }, popViewController: {
                 self.formViewController.navigationController?.popViewController(animated: true)
         })
-        self.rendered = build(context)
+        self.rendered = element(context)
         rendered.update(state)
         formViewController = FormViewController(sections: rendered.element, title: "Personal Hotspot Settings")
     }
