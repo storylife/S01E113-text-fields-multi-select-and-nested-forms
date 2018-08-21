@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8348889D2063B908000114E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348889C2063B908000114E0 /* AppDelegate.swift */; };
-		8348889F2063B908000114E0 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348889E2063B908000114E0 /* FormViewController.swift */; };
+		8348889F2063B908000114E0 /* MainSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348889E2063B908000114E0 /* MainSettings.swift */; };
 		834888A42063B908000114E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834888A32063B908000114E0 /* Assets.xcassets */; };
 		834888A72063B908000114E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834888A52063B908000114E0 /* LaunchScreen.storyboard */; };
 		83792ED2206902240076AE3C /* Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83792ED1206902240076AE3C /* Forms.swift */; };
+		FA1410FB212C1F9A0053F163 /* Hotspot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1410FA212C1F9A0053F163 /* Hotspot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		834888992063B908000114E0 /* FormsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8348889C2063B908000114E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8348889E2063B908000114E0 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		8348889E2063B908000114E0 /* MainSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettings.swift; sourceTree = "<group>"; };
 		834888A32063B908000114E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834888A62063B908000114E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834888A82063B909000114E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83792ED1206902240076AE3C /* Forms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forms.swift; sourceTree = "<group>"; };
+		FA1410FA212C1F9A0053F163 /* Hotspot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotspot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				83792ED1206902240076AE3C /* Forms.swift */,
 				8348889C2063B908000114E0 /* AppDelegate.swift */,
-				8348889E2063B908000114E0 /* FormViewController.swift */,
+				8348889E2063B908000114E0 /* MainSettings.swift */,
+				FA1410FA212C1F9A0053F163 /* Hotspot.swift */,
 				834888A32063B908000114E0 /* Assets.xcassets */,
 				834888A52063B908000114E0 /* LaunchScreen.storyboard */,
 				834888A82063B909000114E0 /* Info.plist */,
@@ -136,7 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				83792ED2206902240076AE3C /* Forms.swift in Sources */,
-				8348889F2063B908000114E0 /* FormViewController.swift in Sources */,
+				FA1410FB212C1F9A0053F163 /* Hotspot.swift in Sources */,
+				8348889F2063B908000114E0 /* MainSettings.swift in Sources */,
 				8348889D2063B908000114E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +275,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 7G2C8A8AT6;
 				INFOPLIST_FILE = FormsSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.objc.FormsSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodsquirrel.ObjcIOFormsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -285,9 +290,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 7G2C8A8AT6;
 				INFOPLIST_FILE = FormsSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.objc.FormsSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodsquirrel.ObjcIOFormsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
