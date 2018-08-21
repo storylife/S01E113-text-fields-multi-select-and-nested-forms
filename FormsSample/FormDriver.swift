@@ -11,6 +11,10 @@ import UIKit
 typealias Element<El, A> = (RenderingContext<A>) -> RenderedElement<El, A>
 typealias Form<A> = Element<[Section], A>
 
+protocol TitleProvider {
+    func title() -> String
+}
+
 class FormDriver<State> {
     var formViewController: FormViewController!
     var rendered: RenderedElement<[Section], State>!
@@ -33,7 +37,8 @@ class FormDriver<State> {
         })
         self.rendered = element(context)
         rendered.update(state)
-        formViewController = FormViewController(sections: rendered.element, title: "Personal Hotspot Settings")
+        let title = (state as? TitleProvider)?.title() ?? "no title"
+        formViewController = FormViewController(sections: rendered.element, title: title)
     }
 }
 

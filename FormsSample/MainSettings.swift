@@ -16,10 +16,15 @@ struct MainSettings {
     }
 }
 
+extension MainSettings: TitleProvider {
+    func title() -> String {
+        return "Settings"
+    }
+}
+
 let settingsForm: Form<MainSettings> =
     sections([
         section([
             detailTextCell(title: "Personal Hotspot", keyPath: \MainSettings.hotspotEnabled, form: bind(form: hotspotForm, to: \.hotspot))
         ])
     ])
-
